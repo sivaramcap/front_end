@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>movie gener</title>
+    <style media="screen">
+      body{
+        /* body  */
+        background-color: lightgrey;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .main_center_para{
+        /* this are for text */
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        margin: 0;
+        /* background */
+        background: #254f4c;
+        position: relative;
+      }
+
+      .info_about_page{
+        text-align: center;
+        font-size: 20px;
+        background: -webkit-linear-gradient(135deg,#22c1c3, #1f789f,#dba53f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* forms */
+      .form_field{
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .age{
+        padding: 20px;
+      }
+      .gender{
+        padding: 20px;
+      }
+      .gener{
+        padding: 20px;
+      }
+      /* nav */
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    </style>
+
+  </head>
+  <body>
+    <div class="bod">
+
+
+
+    <div class="main_center_para">
+      <p>movie servey</p>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="thank.html">database</a>
+</div>
+    <div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open for data</button>
+</div>
+
+
+
+
+    <div class="info_about_page">
+      <h1>welcome ! hello movie lovers this is for you</h1>
+      <p>This page contain three field your Age,Gender,and which type of movie did you love most</p>
+    </div>
+
+
+    <div class="form_field">
+      <form class="" action="thank.html" method="POST">
+      <div class="age">
+
+          <label for="age">select your age -  </label>
+          <select class="" name="age">
+            <option value="18-25">18-25</option>
+            <option value="25-35">25-35</option>
+            <option value="35-45">35-45</option>
+            <option value="45-50">45-50</option>
+            <option value="and above">and above</option>
+          </select>
+      </div>
+
+      <div class="gender">
+        <label for="gender">select your gender</label>
+        <select class="" name="gender">
+          <option value="male">male</option>
+          <option value="female">female</option>
+        </select>
+      </div>
+
+      <div class="gener">
+        <label for="gener">gener</label>
+        <select class="" name="gener">
+          <option value="romantic">romantic</option>
+          <option value="action">action</option>
+        </select>
+
+        <input type="submit" >
+      </div>
+
+      </form>
+
+
+
+    </div>
+</div>
+<script type="text/javascript">
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+</script>
+  </body>
+</html>
